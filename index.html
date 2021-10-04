@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="author" content="Skyler Xu">
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body id="body-id" onload='init()'>
+    <h2 id="header-id">
+        Hungry Snake
+    </h2>
+
+    <a>Hunt you down eat you alive -- Maroon 5</a>
+    <br />
+    <br />
+    <div id="game-description-id">
+        <a>The snake moves towards direction of the mouse when the mouse it pressed. When the mouse is not pressed, the
+            snake moves in a straight line. So you can change the direction the snake is going by clicking the mouse or
+            clicking and moving the mouse at the same time. The snake dies if it moves into the wall or itself. It can
+            possible touches itself when taking a very drastic turn larger than 90 degree. It is advised to take
+            smooth turns when changing the direction of the snake.
+            (make sure you click the mouse in front of the snake!)
+
+            <br />
+            <br />
+
+            Scores are calculated based on the number of treats eaten by the snake. When the it eats a treat, its length
+            increases by 1.
+            The moving speed of the snake also increases as the game goes on.
+        </a>
+    </div>
+    <br />
+    <a>Good Luck &#128540</a>
+    <br />
+
+    <div id="game-div-id">
+        <div id="game-menu-line-div-id">
+            <!-- <div id="button-div-id"> -->
+            <button id="play-again-button-id" class="btn btn-dark" onclick="init()">Play Again</button>
+            <!-- </div> -->
+            <div id="game-score-div-id">
+                <span>Best Score: </span> <span id="best-score-span-id">--</span>
+                <br />
+                <span id="score-span-id">Current Score: 0</span>
+            </div>
+        </div>
+        <canvas id="game-canvas-id"></canvas>
+    </div>
+
+    <div id="game-stats-div-id">
+        <span>Game Stats:</span>
+        <br />
+        <span>Games played: </span> <span id='gamesPlayed-span-id'>--</span>
+        <!-- <span>Avg mouse down time: </span> <span id='avgMouseDownTime-span-id'>--</span> -->
+        <span>Avg score: </span> <span id='avgScore-span-id'>--</span>
+        <span>Avg alive time: </span> <span id='avgAliveTime-span-id'>--</span> <span>s</span>
+        <span></span>
+    </div>
+</body>

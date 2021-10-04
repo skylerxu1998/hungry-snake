@@ -1,0 +1,53 @@
+#game-canvas-id {
+    /* height: 400pt; */
+    /* width: 600pt; */
+    height: 80%;
+    width: 100%;
+    background-color: black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#game-div-id {
+    text-align: center;
+    margin-top: 3%;
+}
+
+#game-div-id span {
+/* #score-span-id { */
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+#play-again-button-id {
+    display: inline-block;
+}
+
+#game-score-div-id {
+    text-align: right;
+    margin-left: auto;
+}
+
+#game-stats-div-id {
+    text-align: left;
+}
+
+#game-description-id {
+    text-align: left;
+}
+
+#game-menu-line-div-id {
+    display: flex;
+}
+
+#header-id {
+    margin-bottom: 4%;
+}
+
+#body-id {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
